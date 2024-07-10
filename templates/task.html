@@ -1,0 +1,7 @@
+<div class="task" id="task-{{.ID}}">
+    <span>{{.Name}}</span>
+    <form hx-post="/delete" hx-target="#tasks-list" hx-swap="innerHTML" style="display: inline;">
+        <input type="hidden" name="id" value="{{.ID}}">
+        <button type="submit">Delete</button>
+    </form>
+</div>
